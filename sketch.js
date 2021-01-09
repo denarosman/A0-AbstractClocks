@@ -1,27 +1,20 @@
 function setup(){
 	createCanvas(800, 600); // make an HTML canvas element width x height pixels
 	stroke(255);
-	minutePrint = 100;
-	currentSecond = second();
+	//console.log(minute());
+	minutePrint = minute();
 }
 
 function draw() {
 	let wheel = ('white');
 	background("#E0C5BE");
 	strokeWeight(0);
-	//console.log("hi");
-	//minutePrint = minute();
+
 	if  (minutePrint != minute())
 	{
-		minutePrint = minute();
 		console.log(minute());
+		minutePrint = minute();
 	}
-
-	//if (minutePrint != minute())
-	//{
-	//	minutePrint = minute();
-	//	console.log(minutePrint);
-	//}
 
 	var h = hour() * (60/24) * PI / 180;
 	var m = minute() * PI / 180;
