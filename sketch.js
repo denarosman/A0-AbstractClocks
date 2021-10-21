@@ -33,7 +33,6 @@ function draw() {
 	let units = [h, m, s]
 
 	for (let i = 0; i < units.length; i++) {
-
 		x = xPos + units[i][0] * 265;
 		y = yPos;
 
